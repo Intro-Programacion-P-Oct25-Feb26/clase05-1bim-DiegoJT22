@@ -8,40 +8,43 @@
  */
 package ejemplo1;
 
-
 import java.util.Locale;
 import java.util.Scanner;
-
 /**
  *
  * @author reroes
  */
-public class Ejemplo1 {
+public class Ejemplo3 {
 
     public static void main(String[] args) {
-        // Condicionales simplesmain
         Scanner entrada = new Scanner(System.in);
         entrada.useLocale(Locale.US);
         double promedio;
+        double limitenota;
         
         System.out.println("Ingrese un valor para analizar");
         promedio = entrada.nextDouble();
+        
+        System.out.println("Ingrese el limite de nota");
+        limitenota = entrada.nextDouble();
 
         
-        if (promedio >= 7.5) {
+        if (promedio >= limitenota) {
             System.out.printf("Estudiante aprobado con un "
                     + "promedio: %.2f\n", promedio);
         }
 
-        if (promedio == 7.5) {
+        if (promedio == limitenota) {
             System.out.printf("Estudiante aprobado con un "
                     + "promedio: %.2f\n", promedio);
         }
 
-        if (promedio < 7.5) {
+        if (promedio < limitenota) {
             System.out.printf("Estudiante aprobado con un "
                     + "promedio: %.2f\n", promedio);
         }
     }
 
-}
+    }
+
+
