@@ -23,7 +23,7 @@ public class Ejemplo5 {
         entrada.useLocale(Locale.US);
         System.out.println("Ingrese la ciudad");
         String ciudad = entrada.nextLine(); // Quito
-
+        // el signo ! hace que pueda excluir la varibale 
         if (!ciudad.equals("Loja")) {
             System.out.printf("%s\n", "acceso correcto");
         } else {
@@ -31,7 +31,7 @@ public class Ejemplo5 {
         }
 
         int numero = 10;
-
+        // se excluye el numero 10
         if (numero != 10) {
             System.out.println("correcto");
         }
