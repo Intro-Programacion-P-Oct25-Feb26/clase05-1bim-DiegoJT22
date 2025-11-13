@@ -59,7 +59,8 @@ public class Ejemplo8 {
                         if (promedio > 0) {
                             //System.out.printf("Nota fuera de rango negativa"
                             //        + "\n%.2f");
-                            mensaje = String.format("Nota fuera de rango:\n %.2f\n", promedio);
+                            mensaje = String.format("Nota fuera de rango:\n"
+                                    + " %.2f\n", promedio);
                         } else {
                             //System.out.printf("Nota fuera de rango"
                             //      + "\n%.2f", promedio);
